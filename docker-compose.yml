@@ -12,5 +12,7 @@ services:
     container_name: mongo
     image: mongo
     restart: always
+    volumes: 
+      - mongo:/usr/mongo
     ports:
       - '27017:27017'
