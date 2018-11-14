@@ -13,6 +13,9 @@ services:
     image: mongo
     restart: always
     volumes: 
-      - mongo:/usr/mongo
+      - mongo:/usr/src/mongo
     ports:
       - '27017:27017'
+
+volumes:
+  mongo:
